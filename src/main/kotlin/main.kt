@@ -15,7 +15,7 @@ fun run(input: List<String>) {
 
 fun level1(input: List<String>) {
     println("LEVEL 1:")
-    printOnSeparateLines(input)//level 1
+    printOnSeparateLines(input)
 }
 
 fun level2(input: List<String>) {
