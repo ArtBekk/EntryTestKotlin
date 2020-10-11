@@ -2,7 +2,7 @@ fun main(args: Array<String>) {
     if (args.isEmpty()) {
         val words = readLine().toString().split(' ')
         run(words)
-    } else run(args.toList())
+    } else run(args[0].split(' ').toList())
 }
 
 fun run(input: List<String>) {
