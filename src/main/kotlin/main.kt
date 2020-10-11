@@ -19,7 +19,7 @@ fun level1(input: List<String>) {
 }
 
 fun level2(input: List<String>) {
-    println("LEVEL :")
+    println("LEVEL 2:")
     printOnSeparateLines(input.sorted())
 }
 
