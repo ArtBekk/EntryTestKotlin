@@ -38,7 +38,7 @@ fun level5(input: List<String>) {
     for (word in input.groupingBy { it }
         .eachCount().toList()
         .sortedWith(compareBy({ -it.second }, { it.first }))) {
-        println(word.first + " " + word.second)
+        println("${word.first} ${word.second}")
     }
 }
 
@@ -47,5 +47,5 @@ fun printOnSeparateLines(input: List<String>) {
 }
 
 fun printOnSeparateLines(input: Map<String, Int>) {
-    for (word in input) println(word.key + " " + word.value)
+    for (word in input) println("${word.key} ${word.value}")
 }
