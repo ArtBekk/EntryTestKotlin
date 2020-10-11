@@ -18,5 +18,11 @@ This repository also includes the following shell scripts:
 
 Usage examples:
 -
+java -jar EntryTestApp.jar "this is where you write your sentence"
+echo this is where you write your sentence | java -jar EntryTestApp.jar
+
+Current test scenario:
+-
+Current test script performs the following command:
+
 java -jar EntryTestApp.jar "the quick brown fox jumps over the lazy dog"
-echo the quick brown fox jumps over the lazy dog | java -jar EntryTestApp.jar
