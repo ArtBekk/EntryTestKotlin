@@ -42,7 +42,6 @@ fun level5(input: List<String>) {
     }
 }
 
-
 fun printOnSeparateLines(input: List<String>) {
     for (word in input) println(word)
 }
