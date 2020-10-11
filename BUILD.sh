@@ -1,1 +1,1 @@
-kotlinc src/*.kt -include-runtime -d EntryTestApp.jar
+kotlinc src/ -include-runtime -d EntryTestApp.jar
