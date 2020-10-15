@@ -19,6 +19,7 @@ This repository also includes the following shell scripts:
 Usage examples:
 -
 java -jar EntryTestApp.jar "this is where you write your sentence"
+
 echo this is where you write your sentence | java -jar EntryTestApp.jar
 
 Current test scenario:
