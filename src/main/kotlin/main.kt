@@ -1,9 +1,14 @@
+/**
+ * The main function purpose is solely for receiving words from the stdin or arguments
+ * and passing them to the run function
+ */
+
 fun main(args: Array<String>) {
     if (args.isEmpty()) {
         val words = readLine().toString().split(' ')
         run(words)
     } else run(args.toList())
-}//This function purpose is solely for receiving words from the stdin or arguments and passing them to the run function
+}//
 
 fun run(input: List<String>) {
     level1(input)
@@ -35,16 +40,23 @@ fun level4(input: List<String>) {
 
 fun level5(input: List<String>) {
     println("LEVEL 5:")
+    /**
+     * It.second is negative because of descending order
+     */
     for (word in input.groupingBy { it }
         .eachCount().toList()
-        .sortedWith(compareBy({ -it.second }, { it.first }))) /*-it.second since we need descending order*/{
+        .sortedWith(compareBy({ -it.second }, { it.first }))) {
         println("${word.first} ${word.second}")
     }
 }
 
+/**
+ * Rest of the functions are for printing out the list elements on separate lines
+ */
+
 fun printOnSeparateLines(input: List<String>) {
     for (word in input) println(word)
-}//Prints the string from list on separate lines. these functions exists in order to reduce the code's duplication
+}
 
 fun printOnSeparateLines(input: Map<String, Int>) {
     for (word in input) println("${word.key} ${word.value}")
