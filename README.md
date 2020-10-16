@@ -22,8 +22,14 @@ java -jar EntryTestApp.jar "this is where you write your sentence"
 
 echo this is where you write your sentence | java -jar EntryTestApp.jar
 
-Current test scenario:
+Current test scenarios:
 -
-Current test script performs the following command:
+Current test script performs the following commands:
 
 java -jar EntryTestApp.jar "the quick brown fox jumps over the lazy dog"
+
+java -jar EntryTestApp.jar
+
+java -jar EntryTestApp.jar lazy lazy lazy cat lies on the bed
+
+java -jar EntryTestApp.jar s s s s s
